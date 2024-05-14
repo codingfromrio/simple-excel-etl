@@ -27,7 +27,7 @@ jobs:
       - name: Run pytest
         run: poetry run pytest
 
-      #- name: Build and deploy
-      #  run: |
-      #    mkdocs build
-      #    mkdocs gh-deploy
+      - name: Build and deploy
+        run: |
+          mkdocs build
+          mkdocs gh-deploy
