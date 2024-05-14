@@ -1,8 +1,8 @@
 from pipe.extract import extract_from_excel
-
-def main():
-    dataframe_list = extract_from_excel("data/input")
-    print(dataframe_list)
+from pipe.transform import concat_dataframes
+from pipe.load import write_df_to_excel
 
 if __name__ == '__main__':
-    main()
+    data_frame_list = extract_from_excel("data/input")
+    drata_frame = concat_dataframes(data_frame_list)
+    write_df_to_excel(drata_frame, "data/output/output.xlsx")
