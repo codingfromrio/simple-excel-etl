@@ -1,0 +1,6 @@
+site_name: Simple Excel ETL
+nav:
+    - Início: index.md
+    - Uso: usage.md
+    - API: api.md
+theme: readthedocs

@@ -1,5 +1,7 @@
-import pandas as pd
 from typing import List
+
+import pandas as pd
+
 
 def concat_dataframes(data: List[pd.DataFrame]) -> pd.DataFrame:
     """
