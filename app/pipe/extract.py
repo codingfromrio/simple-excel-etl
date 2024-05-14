@@ -1,6 +1,5 @@
 import glob # library to list files in a directory
-
-import pandas as pd # biblioteca para manipulação de dados
+import pandas as pd # library to work with dataframes
 
 from typing import List
 
