@@ -1,0 +1,5 @@
+.venv
+.git
+poetry.lock
+.vscode
+__pycache__
