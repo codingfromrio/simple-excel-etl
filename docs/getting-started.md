@@ -1,7 +1,3 @@
-# simple-excel-etl
-This is a personal project, that consolidates multiple excel files in a single excel file.
-The key objective of this project, is demonstrate skills like ci/cd, modular development, tests and documentation.
-
 # Install python
 This project was written in python 3.12.3
 

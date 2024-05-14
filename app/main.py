@@ -11,4 +11,5 @@ def main():
 
 if __name__ == '__main__':
     main()
-    print("testing ci workflow 2")
+    print("testing ci workflow")
+
