@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write  # Define permissões para operações de escrita no repositório
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -12,6 +15,8 @@ jobs:
     steps:
       - name: Checkout code 
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Busca todo o histórico do repositório
 
       - name: Set up Python 3.12.3
         uses: actions/setup-python@v2
@@ -28,7 +33,9 @@ jobs:
         run: poetry run pytest
       
       - name: git config
-        run: git config user.name 'github-actions[bot]' && git config user.email 'github-actions[bot]@users.noreply.github.com'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
         
       - name: Publish docs
         run: poetry run mkdocs gh-deploy
