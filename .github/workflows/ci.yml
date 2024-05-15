@@ -31,4 +31,4 @@ jobs:
         run: git config user.name 'github-actions[bot]' && git config user.email 'github-actions[bot]@users.noreply.github.com'
         
       - name: Publish docs
-        run: poetry mkdocs gh-deploy
+        run: poetry run mkdocs gh-deploy
