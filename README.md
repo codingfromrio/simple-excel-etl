@@ -2,7 +2,7 @@
 This is a personal project, that consolidates multiple excel files in a single excel file.
 The key objective of this project, is demonstrate skills like ci/cd, modular development, tests and documentation.
 
-[Check here the project documentation](https://codingfromrio.github.io/simple-excel-etl/){:target="_blank"}
+[Check here the project documentation](https://codingfromrio.github.io/simple-excel-etl/)
 
 # Install python
 This project was written in python 3.12.3
