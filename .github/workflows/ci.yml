@@ -27,5 +27,9 @@ jobs:
       - name: Run pytest
         run: poetry run pytest
 
-      - name: deploy docs site
-        run: poetry run mkdocs gh-deploy
+      - name: Deploy docs site
+        env:
+          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+        run: |
+          git remote set-url origin https://x-access-token:${PERSONAL_TOKEN}@github.com/codingfromrio/simple-excel-etl.git
+          poetry run mkdocs gh-deploy
